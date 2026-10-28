@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <meta name="description" content="Área de contato do cliente. Envie sua mensagem para a equipe de suporte técnico e obtenha ajuda com nossos serviços.">
+    
+    <title>Área de Contato do Cliente</title>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <h1 class="titulo">Área de Contato do Cliente</h1>
+        
+    
+        <nav class="menu">
+            <a href="#">Ajuda</a> | <a href="#">Sair</a>
+        </nav>
+    </header>
+
+    
+    <main id="corpo-da-pagina">
+        
+      
+        <article class="subtitulo">
+            <h2>Envie sua mensagem para a nossa equipe de suporte backend</h2>
+            
+          
+            <form action="/enviar" method="POST">
+                
+                <label for="nome">Nome:</label>
+               
+                <input type="text" id="nome" name="nome" minlength="3" required><br><br>
+                
+                <label for="email">Email:</label>
+                
+                <input type="email" id="email" name="email" minlength="5" required><br><br>
+                
+                <label for="celular">Telefone Celular:</label>
+               
+                <input type="tel" id="celular" name="celular" pattern="[0-9]{11}" title="Digite exatamente 11 números" required><br><br>
+                
+                <label for="msg">Mensagem:</label>
+                <textarea id="msg" name="msg" required></textarea><br><br>
+                
+                <input type="submit" value="Disparar Dados">
+            </form>
+        </article>
+        
+    </main>
+
+    <footer id="rodape">
+        <p>Suporte Tech 2026</p>
+    </footer>
+
+</body>
+</html>
