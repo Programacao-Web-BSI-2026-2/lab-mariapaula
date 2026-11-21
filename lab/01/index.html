@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a equipe de suporte técnico para enviar dúvidas e solicitações.">
+    <title>Área de Contato | Suporte Tech</title>
+</head>
+<body>
+    <header>
+        <h1>Área de Contato do Cliente</h1>
+
+        <nav aria-label="Menu principal">
+            <a href="#contato">Ajuda</a>
+            <a href="/">Sair</a>
+        </nav>
+    </header>
+
+    <main>
+     <article id="contato" aria-labelledby="titulo-contato">
+            <h2 id="titulo-contato">
+                Envie sua mensagem para a nossa equipe de suporte backend
+            </h2>
+
+            <form action="/enviar" method="POST">
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                           required minlength="3">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           required>
+                </p>
+
+                <p>
+                    <label for="celular">Telefone Celular:</label>
+                    <input type="tel" id="celular" name="celular"
+                           pattern="[0-9]{11}"
+                           title="Digite 11 números com DDD"
+                           required>
+                </p>
+
+                <p>
+                    <label for="msg">Mensagem:</label>
+                    <textarea id="msg" name="msg"
+                              rows="5" required></textarea>
+                </p>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+       </article>
+    </main>
+
+    <footer>
+        <p>Suporte Tech 2026</p>
+    </footer>
+</body>
+</html>
 
