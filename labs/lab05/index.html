@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Horária de Aulas do Módulo</title>
+</head>
+<body>
+
+<main>
+    <h1>Portal Acadêmico IFF</h1>
+
+        <!-- MÓDULO 5: HORÁRIOS DAS AULAS -->
+        <section class="bloco-cronograma">
+            <h2 class="titulo-seccao">Horários acadêmicos</h2>
+
+            <table>
+                <caption>Grade horária das aulas</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Aula</th>
+                        <th scope="col">Horário</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Estruturação Multimídia</td>
+                        <td>19:00 - 20:30</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Recursos necessários:</p>
+
+            <ul>
+                <li>Computador com IDE configurada</li>
+                <li>Arquivos de legenda (.vtt) prontos</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- MÓDULO 6: CONTEÚDO INTEGRADO -->
+        <section class="bloco-video">
+            <h2>Apresentação da Disciplina</h2>
+
+            <video controls width="640">
+                <source src="apresentacao.mp4" type="video/mp4">
+
+                <track
+    kind="captions"
+    src="legendas.vtt"
+    srclang="pt-BR"
+    label="Português"
+    default>
+
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+        </section>
+
+        <section class="bloco-mapa">
+            <h2>Localização do Campus IFF</h2>
+
+            <iframe
+                src="https://mapas.iff.edu.br"
+                title="Mapa de localização do Campus IFF"
+                sandbox=""
+                loading="lazy"
+                width="600"
+                height="450">
+            </iframe>
+        </section>
+    </main>
+
+</body>
+</html>
